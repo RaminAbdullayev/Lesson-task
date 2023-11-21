@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+    width: 600px;
+    margin-left: 50px;
+}
+
+.box {
+    height: 80px;
+    background-color: rgb(1, 209, 1);
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.box:hover {
+    transform: scale(1.5);
+    box-shadow: 4px 4px 8px 4px rgb(173, 255, 169);
+}
